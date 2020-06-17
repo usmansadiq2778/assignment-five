@@ -480,21 +480,684 @@ document.write(Visitorsname,"  " + Producttitle," " + " order "+ Quantity +" "+"
 
 
 
-                    //  chp 6 task 6
-                     var e =  prompt("Enter eng marks ");
-                     var u =  prompt("Enter urdu marks");
-                     var m =  prompt("Enter math marks ");
+                    // chp 6 task 6
+                     var sub1 =  prompt("Enter subject name ");
+                     var sub2 =  prompt("Enter subject name ");
+                     var sub3 =  prompt("Enter subject name ");
+                  
+                    var total=100;
+                    var sub1_marks=prompt(" Enter " + sub1 + " marks")
+                    var sub2_marks=prompt(" Enter " + sub2 + " marks")
+                    var sub3_marks=prompt(" Enter " + sub3 + " marks")
                    
-                     var k =  prompt("Enter name ");
-                     var j =  prompt("Enter name");
-                     var o =  prompt("Enter name marks ");
                    
-                     var t_M=100;
-                     for(var i=0;i<e.length;i++){
-                      for (var j=0;j<i;j++){
-                        document.write(e +"<br>"+u +"<br>")
-                      }
-                     }
+                    var subjects="<h1>Subject</h1>"+   sub1 + "<br>"+"  " + sub2 +"  " + "<br>" + sub3  ; 
+                    // document.write(subjects);
+                    var subject_marks=("<h1>Obtain Marks</h1>"+  sub1_marks + "<br>" + sub2_marks + "<br>" +sub3_marks);
+                    // document.write(subject_marks);
+                    var total_marks=("<h1>Total Mark</h1>" + total +"<br>" + total +"<br>" + total  );
+                    // document.write(total_marks);
+                    var Percentage= ("<h1>Persentage</h1>"+(sub1_marks/100)*100 + "<br>" +(sub2_marks/100)*100+"<br>" +(sub3_marks/100)*100);
+                    // document.write(Percentage);
+                    // document.write( + subjects + " " + subject_marks + " " + total_marks+" "+Percentage + "</span>" );
+                
+                  
+                   document.write(subjects + " " + subject_marks + "  "+total_marks + Percentage  )
+                   
+               
+                        
+
+                                  //  chp 9 - 11 task 1
+                                  var city =prompt("Enter city name");
+                                  if(city==="Karachi"){
+                                    document.write("Welcome to city of lights")
+                                  }                                 
+                                else{
+                                  document.write("<h1>Welcom to </h1>" + city)   
+                                                            }
+
+                                                
+                                                            
+                                    // chp 9 - 11 task 2    
+                              
+                    var gender=prompt("Please Enter Your Gender") ;
+                    if(gender === "male"){
+                      document.write("<h1>Good Morning Sir</h1>")
+                    }  
+                    else if(gender==="female"){
+                      document.write("<h1>Good Morning Ma’am.</h1>")
+                    }
+
+
+
+
+
+                                  //  chp 9 - 11 task 3 
+                                  
+               var ch = ["Signal color", "Red" , " Yellow" ,"Green"];
+     var color=prompt("Enter road traffic color")
+     color=color.toUpperCase();
+              if( color ==="RED"){
+                 document.write("Signal color &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Message "+ "<br>");
+                document.write(color + "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Must Stop");
+              }
+              else if( color==="yellow")  {
+              document.write("Signal color &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;")
+
+              }
+              else if( color==="green")   {
+            
+                document.write("Signal color &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Message "+ "<br>");
+                document.write(color + "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Ready to move");
+              
+              }
+
+
+
+
+                  //  chp 9 - 11 task 4
+                  
+                  var a=prompt("Please Enter Remaining fuel in car")
+                  if( a <= 0.25){
+                    document.write("<h1>Please refill the fuel in your car</h1>")
+                  }
+                  else if(a > 0.25){
+                  document.write("<h1>your fuel is ok</h1>")
+                  }
+                   
+                  //  chp 9 - 11 task 5
+                //   Massage should displayed
+                  var a = 4;
+                  if (++a === 5){
+                  alert("given condition for variable a is true");
+                  }
+                        //  Message could not be displayd         
+                  var b = 82;
+                     if (b++ === 83){
+                        alert("given condition for variable b is true");
+                              }
+                  
+                          
+                        
+                                //  chp 9-11 task 6
+
+                                var sub1_marks=prompt("enter marks");
+                                var sub2_marks=prompt("enter marks");
+                                var sub3_marks=prompt("enter marks");
+                                var total_marks=300;
+                                document.write("Total marks: " + sub1_marks +  33);
+
+
+                                // chp 9-11 task 7
+                                var a = 2;
+                                var b =prompt("Enter u choose ( 1 to 10 )  number ");
+                                if(a==b){
+                                  alert("Bingo! Correct Answer")
+                                }
+
+
+                                var a = 2;
+                                var b =prompt("Enter u choose ( 1 to 10 )  number ");
+                                if(++a==b){
+                                alert("Close enough to correct answer")}
+
+
+                                // chp  9-11 task 8
+                                var a=prompt("Enter a number")
+                                if(a%3==0){
+                                  document.write("The Number is divisible by 3 ")
+                                }
+      
+
+                                // chp  9-11 task 9 
+                                var a=prompt(" Enter the Number ")
+                                if(a%2==0){
+                                  document.write("Even Number")
+
+                                  
+                                }
+                                else if(a %2 !==0){
+                               document.write(odd)
+                                }
+
+                              var tem=prompt("Enter your Area temprature")
+                              if(tem>10 &&tem<=20){
+                                document.write("<h1>OMG! today 's Whether is so Cool.</h1> ")
+                              }
+                              else if(tem>20 && tem<=30){
+                                document.write("<h1>Today's  Whether is so Cool </h1>")
+                              }
+                              else if(tem>30 && tem <40){
+                                document.write("<h1>Today whether is Normal </h1>")
+                              }
+                              else if(tem>40 && tem <50){
+                                document.write("<h1>it is to hot out side</h1>")
+                              }
+
+
+
+
+                              
+                              // Chp 9-11 task 11
+
+                              var first_number=prompt("Enter first Number");
+                              var second_number=prompt("Enter second Number");
+                              var sign=prompt("Enter your sign");
+                             if(sign=='+' ){
+                               document.write((+first_number) + (+second_number));
+                             } 
+                             if(sign=='-' ){
+                              document.write((+first_number) - (+second_number));
+                            } 
+                            if(sign=='*' ){
+                              document.write((+first_number) * (+second_number));
+                            } 
+                            if(sign=='/' ){
+                              document.write((+first_number) / (+second_number));
+                            }  
+                            if(sign=='%' ){
+                              document.write(((+first_number) / (+second_number))*100);
+                            }  
+
+
+
+
+                            // chp 12 task 2 
+                            var a=prompt("Enter first Number");
+                            var b =prompt("Enter second Number ");
+                            if(a > b){
+                                document.write("<h1>1st Number is greter then second Number </h1>")
+                            }
+                            else if(b>a){
+                                document.write("<h1>2nd Number is greter then 1st Number </h1>")
+                            }
+                            else if(a==b){
+                                document.write("  <h1>1st  and 2nd Number  is Equal </h1> ")
+                            }
+
+
+
+
+                            // chp 12 task 3 
+
+                            var a=prompt("Enter a Number")
+                            if(a > 0 ){
+             document.write("<h1> You Enter Number is postive     </h1>")
+                            }
+                            else if(a<0){
+                document.write("<h1> You Enter Number is negtive </h1>")
+
+                            }
+                            else if(a==0){
+                                document.write("<h1> You Enter Number is Zero </h1>")
+                
+                                            }
+     
+          
+          
+          
+          
+          
+                                    //    chp 12-13 task 4
+                           
+                        var a = prompt("Enter a sting of length 1 ")
+                        a=a.toLowerCase(); 
+                        if(a ==='a'||a==='e' || a==='i' || a==='o' || a==='u' ){
+                            document.write("<h1> You Enter vowel word  </h1>")
+                        }
+                        else{
+                            document.write("<h1> You Enter  word is not wovel </h1>");
+                        }              
+
+
+
+                        // chp 12-13 task 5
+
+                        var a=prompt("you Enter Strong password");
+                        var b=prompt("Conform password ")
+                        if(a===b){
+                            document.write("<h1> Thanku your password is Correct</h1>")
+                        }
+                        else{
+                            document.write("<h1> Sorry your password is InCorrect</h1>"+"<h1>Please Try Again</h1>")
+                        }
+
+
+
                      
+                    //   /  chp 12-13 task 6
+
+                        
+                        var greeting;
+                        var hour = 13;
+                      if (hour < 18) {
+                          greeting==="Good day";
+                          document.write(greeting);
+                        }
+                            else{
+                                greeting="<h1>Good Morning</h1>";
+                               document.write(greeting);
+                            }
+
+                      
+                    //   chp 14 - 16 task 1
+
+
+                    var a=[];
+
+                    document.write(a)
+                  
+                  
+                    // chp 14 - 16 task 2
+                    var a=[];
+                    const myArray = new Array()
+
+
+                    // chp 14 - 16 task 3
+                    var arr=["ali","bilal"]
+
+
+
+                    // chp 14 - 16 task 4 
+                    var a=[1,2,3];
+                    alert(a)                   
+
+
+
+                    // chp 14 - 16 task 5
+
+                    var arr=[true,false];
+
+
+                    // chp 14 - 16 task 6 
+
+                    var arr= ["ali","bilal",5,6,7];
+                   document.write(arr +"<br>")
+
+                   
+                   
+                    // chp 14 - 16 task 7
+                    
+                    var a = [ " <h1> 1) SSC </h1>" , "<h1> 2) HSC </h1>" , "<h1> 3) BCS </h1>" , "<h1> 4) BS </h1>" , "<h1> 5) BCOM </h1>"  , " <h1> 6) MS </h1>","<h1>  7) M. Phil</h1>" , "<h1> 8) PhD </h1>"];
+                    var b = a.length;
+                    document.write("<h1>Qulifications</h1>")
+                    for(var i =0; i < b; i++)
+                    {
+                      document.write(a[i])
+                    //   document.write("<br>")
+
+
+                    // chp 14 - 16 task 8
+   
+                    }
+                    var a=["ali","bilal","usman"]
+                    var b=[300,400,450]
+                    var total=500
+                    for(i=0;i<b.length;i++){
+                    document.write(" score of " + a[i] + "  " + " = " + b[i] + ".  "+" " +"Persentage is "+( b[i]/total)*100  );
+                   
+                    document.write( " <br> ")}
+
+
+
+
+                    // chp 14 - 16 task 9
+                    var color=["red","blue","grean"];
+
+                    for(var i=0;i<color.length;i++){
+                        document.write(color[i]+" " + " <br>")
+                        
+                    }
+                        //   B task
+
+
+                        var color=["red","blue","grean"];
+                        color[3]="yellow";
+                        color[4]="black";
+                        color[5]="grey";
+                       
+                       for(var i=0;i<color.length;i++){
+                           document.write(color[i]+" " + " <br>")
+                       }
+                       
+
+                                //  B task
+                      
+                    var color=["red","blue","grean"];
+                     color.push("yellow","black","grey");
+                    
+                    for(var i=0;i<color.length;i++){
+                        document.write(color[i]+" " + " <br>")
+                    }
+
+                        // c task
+
+                        var color=["red","blue","grean","yellow","black","grey"];
+                        color.push("white","whitespace");
+                    
+                    for(var i=0;i<color.length;i++){
+                        document.write(color[i]+" " + " <br>")
+                    }
+
+                      
+                        //    D task
+
+                          var color=["red","blue","grean","yellow","black","grey"];
+                          color.push("white","whitespace");
+                              color.shift();
+                          
+                          for(var i=0;i<color.length;i++){
+                              document.write(color[i]+" " + " <br>")
+                          }
+
+
+
+                            // E task
+
+                            
+                          var color=["red","blue","grean","yellow","black","grey"];
+                          color.push("white","whitespace");
+                              color.shift();
+                              color.pop();
+                          
+                          for(var i=0;i<color.length;i++){
+                              document.write(color[i]+" " + " <br>")
+                          }
+
+
+                        // f    task
+
+           
+                          var color=["red","blue","grean","yellow","black","grey"];
+                          var user=prompt("Enter index no u want to add color")
+                         color.push("white","whitespace");
+                               color.shift();
+                               color.pop();
+                               color.splice(user,1,"white","whitespace" )
+                          
+                          for(var i=0;i<color.length;i++){
+                              document.write(color[i]+" " + " <br>")
+                          } 
+
+
+
+                        // task g
+                        
+                        var color=["red","blue","grean","yellow","black","grey"];
+                        // 
+                          var user=prompt("Enter index no u want to delete color")
+                          var dlt=prompt("Enter you want how many color u want to delete")
+                        
+                               color.splice(user,dlt )
+                          
+                          for(var i=0;i<color.length;i++){
+                              document.write(color[i]+" " + " <br>")
+                          } 
+
+
+
+
+
+                    //   chp 14-16(10)
+
+                       var students_marks=[30,40,80,25,45,35,47,89,66,77,88,55];
+                       
+                       
+                       document.write(students_marks + " <br>");
+                       document.write("<br>");
+                       document.write(students_marks.sort());
 
                   
+                     
+                        //   chp 14-16(11)
+                        var city=[" Karachi "," Faisalabad "," Multan "," lahor "," Queta "," sumundri "]
+                        document.write("<h1>City list</h1>")
+                        document.write(city)
+                        document.write("<h1>Selected Cites Name :</h1>")
+                        var city_selected;
+                          city_selected=city.slice(2,5)
+                          document.write(city_selected)
+
+
+
+                        //    chp 14 - 16 (12)
+
+                           var a=[ "This " , " is ", " my ", " cat "]
+                           document.write("<h1>Array</h1>")
+                          
+                           document.write(a)
+                           document.write("<h1>Strings </h1>")
+                          
+                            var Strings=a.join()
+                            document.write(Strings +" <br> ")
+                            var Strings=a.join("   ")
+                            document.write(" " + Strings + "<br>")
+
+                            var Strings=a.join(" +  ")
+                            document.write(" " + Strings + "<br>")
+                           
+                           
+                           
+
+
+
+                        // chp 14 - 16 (13)
+
+
+                        var mammals = new Array("cat","dog","human","whale","seal");
+                        var animalString = "";
+                        for (var i = 0; i < mammals. length; i++) {
+                           animalString += mammals[i] + " ";
+                        }
+                        alert(animalString);
+
+
+
+                        // chp 14 - 16 (14)
+                      var  ali = new Array();
+                      document.write("<h1>Devices</h1>")
+                      ali=[" keyboard "," mouse "," printer "," Monitor"]
+                      document.write(ali +"<br>")
+                   
+                      document.write("<h1>FIFO</h1>")
+                      
+                    for(var i = 0;i <ali.length;i++){
+                        document.write(ali[i] + " <br>")
+                    }
+                   
+
+
+                      document.write("<h1>LIFO</h1>")
+                      document.write(ali.pop() + " <br>");
+                      document.write(ali.pop() + " <br>");
+                      document.write(ali.pop() + " <br>");
+                      document.write(ali);
+                       
+
+                    //  chp 14 - 16 (15)
+                       var a=["Apple","Samsung","Motorola","Nokia","Sony & Haier"];
+                       document.write("<select>")
+                       for(var i = 0;i<a.length;i++ ){
+                       document.write("<option>"+ a[i]+"<option>")
+                        
+                     }
+                         document.write("</select>")
+
+
+                    
+                                            //   chp 17 - 20 task (1)
+
+
+                      var a= []  
+                      var b=[]  
+                      a.push([1,2]);
+                      b.push([3,5,7]) 
+                      document.write(a+ "<br>");
+                      document.write(b+"<br>")
+
+                    // chp 17 - 20 task (2)
+
+              
+                 
+                   var gfg = new Array(4); 
+  
+            // Loop to create 2D array using 1D array 
+                   document.write("<h1>Matrix</h1>"); 
+                   for (var i = 0; i < gfg.length; i++) { 
+                   gfg[i] = []; 
+     } 
+            var h = 0; 
+           var s = [0,1,2,3,1,0,1,2,2,1,1,0] 
+  
+// Loop to initilize 2D array elements. 
+            for (var i = 0; i < 4; i++) { 
+               for (var j = 0; j < 4; j++) { 
+  
+               gfg[i][j] = s[h++]; 
+    } 
+} 
+  
+// Loop to display the elements of 2D array. 
+for (var i = 0; i < 3; i++) { 
+    for (var j = 0; j < 4; j++) 
+  
+    { 
+        document.write(gfg[i][j] + " "); 
+    } 
+    document.write("<br>"); 
+} 
+  
+        
+
+
+                    // chp 17 task 3 
+
+               var a=10;
+               for(var i =1;i<=10;i++){
+                    document.write(i + "<br>")
+                 }
+
+                // order and reverse Method
+                 var word="bilal sadiq";
+                 var ali=word.split(" ");
+                console.log(ali)
+                 
+
+                // reverse Method
+                var word="bilal sadiq";
+                var ali=word.split(" ").reverse();
+               console.log(ali)
+
+
+                // join method
+                var word="bilal";
+                var ali=word.split("").reverse().join("")
+               console.log(ali)
+           
+    
+            //    chp 18     task 4
+
+            var a=prompt("Enter a Number to show its Multiplication Table s");
+            var b=prompt("Enter Length Multiplication Table");
+            document.write("Multiplication of table " + a +" Length is" + b +"<br>")
+            for(var i = 1; i <= b;  i++    ){
+                document.write(a + " x " + i + " = " +( a * i) );
+                document.write("<br>")
+            }
+
+
+            // chp 18     task 5
+        var    fruits = ["apple", "banana", "mango", "orange" , " strawberry "]
+        for(var i=0;i<fruits.length;i++){
+            console.log(fruits[i])
+            document.write("<br>")
+           
+        }
+
+     
+    
+    
+            //  chp 18     task 6
+           
+                // A
+
+             for( var i =1;i<=15;i++){
+                 document.write(i)
+                 document.write(",")
+             }
+     
+        
+                    //  B
+
+
+                    for(var i=15;i>=1;i--){
+                        document.write(i);
+                        document.write(",")
+
+                    }
+
+
+                    // c
+
+                    for(i=0;i<=20;i=i+2){
+                    document.write(i);
+                        document.write(",")
+
+                  }
+
+
+                    //  D
+
+                     for(i=1;i<=20;i=i+2){
+                        document.write(i);
+                            document.write(",")
+    
+                      }
+                    
+                    
+                    // E
+
+                    for(i=2;i<=20;i=i+2){
+                        document.write(i);
+                            document.write("K,")
+    
+                      }
+
+                             
+                    // chp 18     task 7
+
+                    A = ["cake", "apple pie", "cookie", "chips", "patties"]
+                    b=prompt("Enter a value")
+                   
+                        if( b===a){
+                            document.write(b +"is Availiable in index" )
+                        }
+                        else{
+                            document.write(b +"is not Availiable in index" )
+                        }
+                    
+    
+                       
+                    // chp 18     task 8
+
+                  var A = [24, 53, 78, 91, 12];
+                   var max = Math.max(...A);
+                   document.write("<h1>Items in Array </h1>" + A + " <br>")
+                   document.write("<h1>Max Items in Array  </h1>")
+                    document.write(max)
+                      
+               
+                // chp 18     task 9
+
+                var A = [24, 53, 78, 91, 12];
+                   var min = Math.min(...A);
+                   document.write("<h1>Items in Array </h1>" + A + " <br>")
+                   document.write("<h1>Min Items in Array  </h1>")
+                    document.write(min)
+
+                // chp 20     task 10 
+                for(var i = 5 ;i<=100;i=i+5){
+                    document.write(i)
+                    document.write(" "+ " , ")
+
+                }
